@@ -1,0 +1,103 @@
+﻿@{
+	ViewData["Title"] = "Contact Us";
+}
+
+@model ContactForm
+<section class="banner-section position-relative overflow-hidden bg-dark">
+	<div class="parallax bg-cover position-absolute start-0 top-0 w-100 h-100 opacity-50"></div>
+	<div class="container text-white">
+		<h2 class="underline-bold fw-bold fs-1 mb-3 pb-3">Contact Us</h2>
+		<nav aria-label="breadcrumb" class="breadcrumb-text">
+			<ol class="breadcrumb">
+                <li class="breadcrumb-item link"><a class="text-white" asp-action="Index" asp-controller="Home">Home / </a></li>
+				<li class="breadcrumb-item" aria-current="page">Contact Us</li>
+			</ol>
+		</nav>
+	</div>
+</section>
+<section class="news-section py-60">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<h1 class="text-underline fw-bold fs-2 mb-30 pb-20">Get in Touch</h1>
+				<ul class="contact-icon list-unstyled ps-0 d-grid gap-10 mb-5">
+					<li>
+						<a href="#" class="text-decoration-none text-dark text-opacity-75 me-40">
+							<span>Boulevard Plaza Tower 1 Sheikh Zayed Road | RAK Julphar Tower, DUBAI - UAE</span>
+						</a>
+					</li>
+					<li>
+						<a onclick="return gtag_report_conversion('tel:+971585397170');" style="direction:ltr;unicode-bidi: embed;" href="tel:+971585397170" class="text-decoration-none d-flex gap-3 text-dark text-opacity-75">
+							<i class="fa-solid fa-phone text-primary"></i>
+							<span>(+971) 585 397 170</span>
+						</a>
+					</li>
+					<li>
+						<a onclick="return gtag_report_conversion('tel:+971585397178');" style="direction:ltr;unicode-bidi: embed;" href="tel:+971585397170" class="text-decoration-none d-flex gap-3 text-dark text-opacity-75">
+							<i class="fa-solid fa-phone text-primary"></i>
+							<span>(+971) 585 397 178</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:info@themeperch.net" class="text-decoration-none d-flex gap-3 text-dark text-opacity-75">
+							<i class="fa-solid fa-envelope-open-text text-primary"></i>
+							<span>info@expertsconsult.co</span>
+						</a>
+					</li>
+
+				</ul>
+
+				<h1 class="text-underline fw-bold fs-2 mb-30 pb-20">Working Hours</h1>
+				<ul class="list-unstyled ps-0 d-grid gap-20 mb-5">
+					<li>
+						<p class="mb-0">Monday to Friday</p>
+						<p class="text-dark text-opacity-75 fw-bold mb-0 heading-font">8.00am - 7.00pm</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-8">
+				<form class="row gx-4 gy-30" method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="SendEmail">
+					<div class="col-md-6">
+						<span class="required-field">
+							<input type="text" arequired="" class="form-control input-custom input-full" asp-for="Name" placeholder="Full Name" aria-required="true">
+						</span>
+						<span class="text-danger" asp-validation-for="Name"></span>
+					</div>
+					<div class="col-md-6">
+						<span class="required-field">
+							<input type="text" class="form-control input-custom input-full" asp-for="Email" placeholder="Email">
+						</span>
+						<span class="text-danger" asp-validation-for="Email"></span>
+					</div>
+					<div class="col-md-6">
+						<input type="text" class="form-control input-custom input-full" asp-for="MobileNumber" placeholder="Mobile Number" aria-required="true">
+					</div>
+					<div class="col-md-12">
+						<span class="required-field">
+							<textarea class="form-control textarea-custom input-full" id="comment" asp-for="Message" required="" rows="8" placeholder="Message" aria-required="true"></textarea>
+						</span>
+						<span class="text-danger" asp-validation-for="Message"></span>
+
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-secondary">Sent a message</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="tab-pane fade show active mt-2" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+					<div>
+						<iframe class="w-100"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14440.371611922463!2d55.2751323!3d25.2000893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8582d907e7a8e8bd!2sExperts%20Accounting%20%26%20Tax%20Consultancy!5e0!3m2!1sen!2sjo!4v1664450690630!5m2!1sen!2sjo" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+
+		
+	</div>
+</section>
+
+
+
+@* @section Scripts{
+		@{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+					
+ }*@

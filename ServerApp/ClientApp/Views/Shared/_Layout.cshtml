@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @await Html.PartialAsync("_TagsHead")
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Accounting Services in Dubai | Bookkeeping | Accounting Firms in Dubai</title>
+    <meta name="description" content="Experts Accounting Services & Tax Consultancy Certified professional chartered Accountants provides Accounting and Bookkeeping services in Dubai &amp;Top-ranked accounting firm in Dubai, UAE" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+@*    <link rel="canonical" href="https://www.expertsconsult.co/" />
+*@  
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Experts Accounting Services & Tax Consultancy in Dubai | Bookkeeping Services | Accounting Firms in Dubai" />
+    <meta property="og:description" content="Experts Accounting & Tax Consultancy Certified professional chartered Accountants provides Bookkeeping and Accounting services in Dubai &amp;Top-ranked accounting firm in Dubai, UAE" />
+    <meta property="og:url" content="https://www.expertsconsult.co/" />
+    <meta property="og:site_name" content="Experts Accounting Services  & Tax Consultancy in Dubai | Bookkeeping Services  | Accounting Firms in Dubai, UAE" />
+    <meta property="article:publisher" content="https://www.facebook.com/ExpertsConsultCo/" />
+    <meta property="article:modified_time" content="2023-01-24T07:49:21+00:00" />
+    <meta property="og:image" content="https://www.expertsconsult.co/images/logo/og-image.jpg" />
+    @await RenderSectionAsync("metatags", required: false)
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" asp-append-version="true">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+</head>
+<body>
+    @await Html.PartialAsync("_Header")
+    @RenderBody()
+    @await Html.PartialAsync("_Footer")
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/typed.min.js"></script>
+    <script src="~/assets/js/custom.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    @await Html.PartialAsync("_TagsBody")
+  
+</body>
+</html>

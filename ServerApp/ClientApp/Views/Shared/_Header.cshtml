@@ -1,0 +1,109 @@
+﻿<header id="navbar_top" class="transparent-header bg-secondary position-fixed ">
+    @*position-fixed*@
+    <div class="top-bar  py-2 py-lg-0">
+        <div class="container">
+            <div class="d-flex gap-4 flex-wrap justify-content-lg-end align-items-center">
+                <div>
+                    <i class="fa fa-location-arrow text-primary"></i>
+                    <span class="text-white ps-2"> Boulevard Plaza Tower 1 Sheikh Zayed Road | RAK Julphar Tower, DUBAI - UAE </span>
+                </div>
+                <div>
+                    <i class="fa-regular fa-clock text-primary"></i>
+                    <span class="text-white ps-2">Mon - Fri : 09:00 - 19:00</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone text-primary"></i>
+                    <span class="text-white ps-2">+971 585-397-170</span>
+                </div>
+                <div class="d-sm-flex d-none">
+                    <span><a href="contact.html" class="btn btn-sm btn-primary">get a free quote</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0 border-bottom ">
+            <a class="site-logo navbar-brand" href="index.html" rel="home">
+                <img class="logo-dark" src="/assets/images/logo/logo.png" width="250" height="40"
+                     alt="Experts logos">
+                <img class="logo-light" src="/assets/images/logo/logo.png" width="250" height="40"
+                     alt="Experts Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav"
+                    aria-controls="main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-lg offcanvas-end bg-dark p-3 p-lg-0" id="main_nav" tabindex="-1">
+                <div class="offcanvas-body align-items-center">
+                    <div class="offcanvas-header px-0 justify-content-end">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item"><a class="nav-link active" asp-action="Index" asp-controller="Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " asp-action="About" asp-controller="Home">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="services.html">Services</a>
+                            <span class="caret nav-indicator d-lg-none d-block" data-bs-toggle="dropdown"></span>
+                            <ul class="dropdown-menu  fade-down">
+                                <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                                <li>
+                                    <a class="dropdown-item" asp-action="tax-consulting" asp-controller="services">
+                                        Tax Consulting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-action="accounting-and-bookkeeping-services" asp-controller="services">
+                                        Accounting Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-action="audit-and-assurance" asp-controller="services">
+                                        Audit & Assurance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-action="business-growth" asp-controller="services">
+                                        Business Growth
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="ERP">
+                                        NOVEM ERP
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="https://blog.expertsconsult.co/" target="_blank">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-action="Contact" asp-controller="Home">Contact</a></li>
+
+
+                    </ul>
+
+                    <div class="ps-lg-3 social-logo gap-5 align-items-center">
+                        <div class="social-logo-light gap-3">
+                           
+                            <a target="_blank"  href="https://api.whatsapp.com/send?phone=+971585397170&text=I'm%20interested%20in%20services%20you%20provide." class="text-decoration-none">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a target="_blank" href="https://g.page/r/Cb3oqOcH2YKFEAI/review" class="text-decoration-none">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/ExpertsConsultCo/" class="text-decoration-none">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/experts-consult-10430b249/" class="text-decoration-none">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <div class="social-logo-dark">
+                            <span><a asp-action="Index" asp-controller="Home" class="btn btn-sm btn-primary">get a free quote</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </nav>
+    </div> 
+</header>
