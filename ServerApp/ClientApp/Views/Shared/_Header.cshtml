@@ -47,13 +47,7 @@
                             <a class="nav-link" href="services.html">Services</a>
                             <span class="caret nav-indicator d-lg-none d-block" data-bs-toggle="dropdown"></span>
                             <ul class="dropdown-menu  fade-down">
-                                <li><a class="dropdown-item" href="services.html">All Services</a></li>
-                                <li>
-                                    <a class="dropdown-item" asp-action="tax-consulting" asp-controller="services">
-                                        Tax Consulting
-                                    </a>
-                                </li>
-                                <li>
+                                 <li>
                                     <a class="dropdown-item" asp-action="accounting-and-bookkeeping-services" asp-controller="services">
                                         Accounting Services
                                     </a>
@@ -63,6 +57,24 @@
                                         Audit & Assurance
                                     </a>
                                 </li>
+                                <li>
+                                    <a class="dropdown-item" asp-action="tax-consulting" asp-controller="services">
+                                        Tax Consulting
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-item dropdown-toggle "  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        VAT Consultancy
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">Tax Agent</a></li>
+                                        <li><a class="dropdown-item" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">VAT Registration</a></li>
+                                        <li><a class="dropdown-item" asp-action="vat-refund-in-dubai-uae" asp-controller="services">VAT Refund</a></li>
+                                      @*  <li><hr class="dropdown-divider"></li>*@
+                                    </ul>
+                                </li>
+                             
+                              
                                 <li>
                                     <a class="dropdown-item" asp-action="business-growth" asp-controller="services">
                                         Business Growth

@@ -32,12 +32,12 @@ namespace ServerApp.Models
 		public bool HasExtension { get; set; }
 
 		// Optionally, add more fields here for returning data to the user.
-       [Required]
+      // [Required]
 		//Number to Check
 		public string? MobileNumber { get; set; }
 
         [Required]
-        [StringLength(220, MinimumLength = 20)]
+        [StringLength(200, MinimumLength = 20)]
         public string? Message { get; set; }
 
     }

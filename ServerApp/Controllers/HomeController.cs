@@ -44,29 +44,6 @@ namespace ServerApp.Controllers
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> SendEmail(ContactForm Form)
-        {
-            try
-            {
-                string Subject = "Website email from: " + Form.Email;
-                string Body = "Name: " + Form.Name + "<br/>" + "Email: " + Form.Email + "<br/>" + " Mobile Number: " + Form.MobileNumber + "<br/>"+ "Message: " + Form.Message;
-
-                
-                await _emailSender.SendEmailAsync(Form.Email,Subject, Body);
-
-               return RedirectToAction("ThankYou");
-
-            }
-                
-            catch (Exception e) { return StatusCode(500); }
-
-        }
-        public IActionResult ThankYou()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -4,6 +4,11 @@ namespace ExpertsWeb.Controllers
     
     public class ServicesController : Controller
     {
+
+        public IActionResult Index()
+        {
+            return View();
+        }
         private readonly ILogger<ServicesController> _logger;
         public ServicesController(ILogger<ServicesController> logger)
         {
@@ -30,6 +35,28 @@ namespace ExpertsWeb.Controllers
             return View();
 
         }
-       
+        [ActionName("vat-registeration-in-dubai-uae")]
+
+        public IActionResult VATRegisteration()
+        {
+            return View();
+
+        }
+        [ActionName("vat-refund-in-dubai-uae")]
+
+        public IActionResult VATRefund()
+        {
+            return View();
+
+        }
+
+        [ActionName("hire-a-tax-consultant-in-dubai-uae")]
+
+        public IActionResult TaxAgent()
+        {
+            return View();
+
+        }
+
     }
 }

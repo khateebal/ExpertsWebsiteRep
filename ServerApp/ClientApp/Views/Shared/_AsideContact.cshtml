@@ -1,0 +1,23 @@
+﻿@model ContactForm
+<form class="p-4 p-md-4 border rounded-3 bg-light" method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
+    <h4>TALK TO AN EXPERT</h4>
+    <hr class="my-4">
+    <div class="mb-3">
+        <input type="text" arequired="" class="form-control input-custom input-full" asp-for="Name" placeholder="Name" aria-required="true">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control input-custom input-full" asp-for="Email" placeholder="Email">
+        <span class="text-danger" asp-validation-for="Email"></span>
+
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control input-custom input-full" asp-for="MobileNumber" placeholder="Mobile Number (Optional)" aria-required="true">
+
+    </div>
+    <div class="mb-3">
+        <span class="text-danger" asp-validation-for="Message"></span>
+        <textarea class="form-control textarea-custom input-full" id="comment" asp-for="Message" required="" rows="4" placeholder="Message" aria-required="true"></textarea>
+    </div>
+    <button type="submit" id="submit-contact" class="btn btn-secondary">Send Message</button>
+</form>
