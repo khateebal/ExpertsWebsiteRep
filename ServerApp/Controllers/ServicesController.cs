@@ -5,10 +5,7 @@ namespace ExpertsWeb.Controllers
     public class ServicesController : Controller
     {
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+       
         private readonly ILogger<ServicesController> _logger;
         public ServicesController(ILogger<ServicesController> logger)
         {
@@ -16,6 +13,11 @@ namespace ExpertsWeb.Controllers
         }
 
 
+        public IActionResult Index()
+        {
+
+            return View();
+        }
         [ActionName("accounting-and-bookkeeping-services")]
         public IActionResult AccountingServices()
         {
@@ -53,6 +55,20 @@ namespace ExpertsWeb.Controllers
         [ActionName("hire-a-tax-consultant-in-dubai-uae")]
 
         public IActionResult TaxAgent()
+        {
+            return View();
+
+        }
+        [ActionName("business-growth-services-in-dubai-uae")]
+
+        public IActionResult BusinessGrowth()
+        {
+            return View();
+
+        }
+        [ActionName("business-solutions-in-dubai-uae")]
+
+        public IActionResult BusinessSolutions()
         {
             return View();
 

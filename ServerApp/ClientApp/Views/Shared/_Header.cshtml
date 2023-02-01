@@ -44,7 +44,7 @@
                         <li class="nav-item"><a class="nav-link active" asp-action="Index" asp-controller="Home">Home</a></li>
                         <li class="nav-item"><a class="nav-link " asp-action="About" asp-controller="Home">About</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link" asp-action="Index" asp-controller="services">Services</a>
                             <span class="caret nav-indicator d-lg-none d-block" data-bs-toggle="dropdown"></span>
                             <ul class="dropdown-menu  fade-down">
                                  <li>
@@ -58,33 +58,36 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" asp-action="tax-consulting" asp-controller="services">
-                                        Tax Consulting
+                                    <a class="dropdown-item dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        TAX Consultancy
                                     </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" asp-action="hire-a-tax-consultant-in-dubai-uae" asp-controller="services">Tax Agent</a></li>
+                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="dropdown-item dropdown-toggle "  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         VAT Consultancy
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">Tax Agent</a></li>
                                         <li><a class="dropdown-item" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">VAT Registration</a></li>
+                                        <li><a class="dropdown-item" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">VAT Compliance</a></li>
                                         <li><a class="dropdown-item" asp-action="vat-refund-in-dubai-uae" asp-controller="services">VAT Refund</a></li>
                                       @*  <li><hr class="dropdown-divider"></li>*@
                                     </ul>
                                 </li>
                              
-                              
+                               <li>
+                                    <a class="dropdown-item" asp-action="business-solutions-in-dubai-uae" asp-controller="services">
+                                        Business Solutions
+                                    </a>
+                                </li>
                                 <li>
-                                    <a class="dropdown-item" asp-action="business-growth" asp-controller="services">
+                                    <a class="dropdown-item" asp-action="business-growth-services-in-dubai-uae" asp-controller="services">
                                         Business Growth
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" asp-action="Index" asp-controller="ERP">
-                                        NOVEM ERP
-                                    </a>
-                                </li>
+                               
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="https://blog.expertsconsult.co/" target="_blank">Blog</a></li>
