@@ -79,7 +79,7 @@
                                         <li>A dedicated team of accountants and tax specialists available to answer your questions and provide ongoing support</li>
                                     </ul>
                                 </p>
-                                <a onclick="return gtag_report_conversion('tel:+971585397170');" href="tel:+971585397170" class="btn btn-lg btn-primary">Let’s Work Together<i class="icon-arrows-slim-right ps-2"></i></a>
+                                <a onclick="return gtag_report_conversion('tel:+971585397170');" href="tel:+971585397170" class="btn btn-lg btn-success">Let’s Work Together<i class="icon-arrows-slim-right ps-2"></i></a>
 
                             </div>
                             @* #FFD700;*@
@@ -104,18 +104,33 @@
                     <div class="vertical-nav">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="about-us.html">
-                                    VAT Regestration 
+                                <a class="nav-link " aria-current="page" asp-action="hire-a-tax-consultant-in-dubai-uae" asp-controller="services">
+                                    Tax Agent
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="our-history.html">VAT Refund</a>
+                                <a class="nav-link active" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">VAT Registration</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="how-we-work.html">Tax Agent</a>
+                                <a class="nav-link" asp-action="vat-registeration-in-the-uae" asp-controller="services">VAT Compliance</a>
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="vat-refund-in-the-uae" asp-controller="services">VAT Refund</a>
+                            </li>
                         </ul>
+                    </div>
+                    <div class="help bg-primary text-white d-grid gap-3">
+                        <h4>Need Help?</h4>
+                        <p class="fw-bold">
+                            Look no further! Our experienced team offers comprehensive VAT Tax agent services,
+                            Don't hesitate, click the button below.
+                        </p>
+                        <div>
+                            <a asp-action="Contact" asp-controller="Home" class="btn btn-sm btn-secondary border-secondary-hover">
+                                <span class="fa-solid fa-envelope"></span>
+                                <span>Get in touch</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div>

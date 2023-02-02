@@ -44,9 +44,16 @@ namespace ExpertsWeb.Controllers
             return View();
 
         }
-        [ActionName("vat-refund-in-dubai-uae")]
+        [ActionName("vat-refund-in-the-uae")]
 
         public IActionResult VATRefund()
+        {
+            return View();
+
+        }
+        [ActionName("vat-compliance-in-the-uae")]
+
+        public IActionResult VATCompliance()
         {
             return View();
 
@@ -59,14 +66,14 @@ namespace ExpertsWeb.Controllers
             return View();
 
         }
-        [ActionName("business-growth-services-in-dubai-uae")]
+        [ActionName("business-growth-services-in-the-uae")]
 
         public IActionResult BusinessGrowth()
         {
             return View();
 
         }
-        [ActionName("business-solutions-in-dubai-uae")]
+        [ActionName("business-solutions-in-uae")]
 
         public IActionResult BusinessSolutions()
         {
