@@ -18,7 +18,7 @@ namespace ExpertsWeb.Controllers
 
             return View();
         }
-        [ActionName("accounting-and-bookkeeping-services")]
+        [ActionName("accounting-services")]
         public IActionResult AccountingServices()
         {
             ViewBag.CssClass = "inner-page";

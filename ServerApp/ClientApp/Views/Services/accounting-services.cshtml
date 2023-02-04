@@ -1,0 +1,449 @@
+﻿@{
+    ViewData["Title"] = "Accounting Services in Dubai | Bookkeeping | Accounting Firms in Dubai";
+}
+
+@section metatags{
+	<meta name="description" content="Professional accounting and bookkeeping services for your business. Experts Accounting & Tax Consultancy in UAE provides accurate and efficient services to improve your financial performance and save you time and money.">
+   
+}
+<style>
+    .justify {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .hero-bg-image-6 {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255,255, 0.6))), url("/assets/images/bg/bg-1.jpg") no-repeat center top;
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/bg/bg-1.jpg") no-repeat center top;
+
+ 
+
+}
+
+    .page-header {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), url(/assets/images/bg/bg-1.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    *, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.side-form{
+  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+  font-size: 12px;
+}
+
+ .side-form button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.side-form .container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+        display: inline-block;
+ /* background: #3e3e3e;*/
+        border-left: 5px solid #d1b000;
+ 
+}
+/*
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .4);
+  z-index: -1;
+}*/
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ea1d6f;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+      
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ea1d6f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+
+
+
+</style>
+
+<section class="banner-section-service"></section>
+<div class="container-fluid page-header  py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+    <div class="container py-5">
+        <h1 class="display-5">Accounting Services</h1>
+   
+        <nav aria-label="breadcrumb" class="breadcrumb-text">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a> /</li>
+                <li class="breadcrumb-item active" aria-current="page">Accounting Services</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<div class="container-xxl py-3">
+    <div class="container">
+        <div class="row g-5">   
+            <div class="col-lg-6" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Optimize Your Business Finances with a</p>
+                <h2 class="display-5 mb-4">Top-Ranked Accounting Services in Dubai</h2>
+                <p class="mb-4">
+                    Running a business can be a complex and challenging task, and one of the biggest headaches for many owners and companies is managing their finances.
+                    From keeping accurate records to staying compliant with tax laws, it's easy to feel overwhelmed.
+                    But with our accounting services, you don't have to worry anymore.
+                </p>
+                <p class="mb-4">
+                    
+                    Experts Accounting & Tax Consultancy is one of the top accounting firms in Dubai,
+                    UAE. We offer a wide range of accounting and bookkeeping services to local and international businesses.
+                </p>
+                 <p class="mb-4">
+                    We strive to help you maximize your financial success with our comprehensive range of accounting services.
+                </p>
+                <div class="d-flex align-items-center mb-4">
+                    <div class="flex-shrink-0 bg-primary p-4">
+                        <div class="welcom-text">
+                        <h1 class="display-1" data-toggle="counter-up">20</h1>
+                        </div>
+                        <h5 class="text-white">YEARS OF</h5>
+                        <h5 class="text-white">EXPERIENCE</h5>
+                    </div>
+                    <div class="ms-4">
+                        <p><i class="fa fa-check text-primary me-2"></i>Bookkeeping Services</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Financial Statement Preparation</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Tax (VAT) Compliance</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Audit &amp; Assurance</p>
+                        <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Budgeting &amp; Forecasting</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+            <div class="row gx-3 h-100">
+            <div class="col-12  " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+             <img class="img-fluid" src="/assets/images/services/g-1.jpg">
+             <div class="align-items-center">
+                            
+                            <div class="screen col-lg-12 mt-4">
+                                <div class="screen-body-item">
+                                    
+                                    <h4 class="text-underline pb-3 mb-3">TALK TO AN EXPERT</h4>
+                                    <form class="app-form col-lg-10"method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="NAME">
+                                        </div>
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="EMAIL">
+                                        </div>
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" placeholder="CONTACT NO">
+                                        </div>
+                                        <div class="app-form-group message">
+                                            <input class="app-form-control" placeholder="MESSAGE">
+                                        </div>
+                                        <div class="app-form-group buttons">
+                                            <button type="submit" id="submit-contact" class="btn btn-outline-primary text-dark">Send Message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+             </div>
+           
+                        
+            </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<section class="service-section bg-light py-60">
+        <div class="container">
+            <div class="row gx-5 gy-30">
+                <div class="col-lg-8">
+                     <div class="row gx-5 px-1">
+                        <div class="mb-60 mt-20">
+                         <h4 class="text-underline body-font fw-bold fs-4 mb-30 pb-20">Expertise You Trust</h4>
+                        <p>
+                           Outsourcing your accounting needs to our expert team offers several advantages over hiring an in-house accountant. 
+                           Not only do you gain access to a wider range of expertise and experience, but you also benefit from the latest technology and efficient processes.
+                           
+                        </p>
+                        <p>
+                            Plus, you can avoid the added cost and responsibility of managing and training employees. With our accounting services,
+                            you can trust that your financials are in good hands and that you are receiving the highest level of support
+                        </p>
+                        </div>
+                     </div>
+                <div class="row g-1">
+                    <div class="col-lg-3">
+                        <div class="position-relative w-100 h-100">
+                            <div class="figure-block position-relative d-grid gap-10 text-white ">
+                                <span>
+                                    <i class="fa-solid fa-calendar-check display-4"></i>
+                                </span>
+                                <h5 class="small text-uppercase">Timely delivery</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="position-relative w-100 h-100">
+                            <div class="figure-block position-relative d-grid gap-10 text-white bg-primary">
+                                <span>
+                                    <i class="fa-regular fa-handshake display-4"></i>
+                                </span>
+                                <h5 class="small text-uppercase">Custumzed service</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="position-relative w-100 h-100">
+                            <div class="figure-block position-relative d-grid gap-10 text-white">
+                                <span>
+                                    <i class="fa-solid fa-wand-magic-sparkles display-4"></i>
+                                </span>
+                                <h5 class="small text-uppercase">Reliable expertise</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class=" position-relative w-100 h-100">
+                            <div class="figure-block position-relative d-grid gap-10 text-white bg-primary">
+                                <span>
+                                    <i class="fa-solid fa-trophy display-4"></i>
+                                </span>
+                                <h5 class="small text-uppercase">Proven results</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+ 
+                </div>
+            <div class="col-lg-4">
+
+                <div class="sidebar d-grid gap-30">
+                    <img src="/assets/images/services/ser-7.jpg" alt="Accounting Firm in Dubai" class="img-fluid">
+
+                </div>
+            </div>
+             </div>
+             <div class="bg-dark mt-60">
+                <div class="row justify-content-center download-wrap text-white text-center py-60">
+                    <div class="col-lg-7">
+                        <h2 class=" fw-bold pb-4">Outsource Your Accounting & Bookkeeping Work Reduce Overhead Cost by up to 
+                            <span class="text-primary">30%</span>
+                        </h2>
+                        <a asp-action="Contact" asp-controller="Home" class="btn btn-lg btn-primary py-3">
+                         
+                            Schedule a Free Evaluation Visit<i class="icon-arrows-slim-right ps-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </div>           
+</section>
+<section class="service-section  py-60">
+        <div class="container">
+<div class="mb-60 mt-20 ">
+    <h4 class="text-underline body-font fw-bold fs-4 mb-30 pb-20">What People Say</h4>
+    <section>
+
+        <div class="row text-center d-flex align-items-stretch">
+            <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <div class="card-up"></div>
+
+                    <div class="card-body">
+                        <h4 class="mb-4">Kaila Sharma, Owner of Kaila's Boutique</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                            <i class="fas fa-quote-left pe-2"></i>I was in a tight spot with my taxes and wasn't sure how to proceed. That's when I found Experts Accounting & Tax Consultancy.
+                            They helped me navigate the process and got me the best outcome possible
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <div class="card-up"></div>
+                    <div class="card-body">
+                        <h4 class="mb-4">Suresh Gupta, CEO of Delta Engenieering</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                            <i class="fas fa-quote-left pe-2"></i>They are always available to answer any questions I have and their services are reasonably priced.
+                            I highly recommend them to any business owner.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-0 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <div class="card-up"></div>
+                    <div class="card-body">
+                        <h4 class="mb-4">Rishi Patel, Owner of Z-Squares Convenience</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                            <i class="fas fa-quote-left pe-2"></i>I have been working with Experts Accounting & Tax Consultancy for over 2 years
+                            now and I couldn't be happier with the services they provide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+</section>
+
+<section class="footer-banner bg-dark text-white">
+    <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-lg-between justify-content-center  text-center">
+            <h1 class="display-5">Make A Difference With <span class="text-primary">Expert Team</span></h1>
+            <div>
+                <a onclick="return gtag_report_conversion('tel:+971585397170');" href="tel:+971585397170" class="btn btn-lg btn-primary">Let’s Work Together<i class="icon-arrows-slim-right ps-2"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/counterup.min.js"></script>
+    <script>
+
+        $('[data-toggle="counter-up"]').counterUp({
+            delay: 10,
+            time: 1000
+        });
+        $('.counter').addClass('animated fadeInDownBig');
+        $('h3').addClass('animated fadeIn');
+    </script>
+}
