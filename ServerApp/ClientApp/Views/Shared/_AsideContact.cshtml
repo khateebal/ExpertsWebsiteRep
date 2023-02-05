@@ -1,25 +1,27 @@
 ﻿@model ContactForm
+<div class="screen col-lg-12 mt-4">
+    <div class="screen-body-item">
 
+        <h4 class="text-underline pb-3 mb-3">TALK TO AN EXPERT</h4>
+        <form class="app-form col-lg-10" method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
+            <div class="app-form-group">
+                <input class="app-form-control" asp-for="Name" aria-required="true" placeholder="NAME">
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="app-form-group">
+                <input class="app-form-control" asp-for="Email" placeholder="EMAIL">
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+            <div class="app-form-group">
+                <input class="app-form-control" placeholder="CONTACT NO (OPTINAL)">
+            </div>
+            <div class="app-form-group message">
+                <input class="app-form-control" asp-for="Message" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+                <button type="submit" id="submit-contact" class="btn btn-outline-primary text-dark">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
 
-<form class="p-4 p-md-4 border rounded-3 bg-light" method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
-    <h4>TALK TO AN EXPERT</h4>
-    <hr class="my-4">
-    <div class="mb-3">
-        <input type="text" arequired="" class="form-control input-custom input-full" asp-for="Name" placeholder="Name" aria-required="true">
-        <span class="text-danger" asp-validation-for="Name"></span>
-    </div>
-    <div class="mb-3">
-        <input type="text" class="form-control input-custom input-full" asp-for="Email" placeholder="Email">
-        <span class="text-danger" asp-validation-for="Email"></span>
-
-    </div>
-    <div class="mb-3">
-        <input type="text" class="form-control input-custom input-full" asp-for="MobileNumber" placeholder="Mobile Number (Optional)" aria-required="true">
-
-    </div>
-    <div class="mb-3">
-        <span class="text-danger" asp-validation-for="Message"></span>
-        <textarea class="form-control textarea-custom input-full" id="comment" asp-for="Message" required="" rows="4" placeholder="Message" aria-required="true"></textarea>
-    </div>
-    <button type="submit" id="submit-contact" class="btn btn-secondary">Send Message</button>
-</form>

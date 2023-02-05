@@ -6,196 +6,10 @@
 	<meta name="description" content="Professional accounting and bookkeeping services for your business. Experts Accounting & Tax Consultancy in UAE provides accurate and efficient services to improve your financial performance and save you time and money.">
    
 }
-<style>
-    .justify {
-        text-align: justify;
-        text-justify: inter-word;
-    }
-    .hero-bg-image-6 {
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255,255, 0.6))), url("/assets/images/bg/bg-1.jpg") no-repeat center top;
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/bg/bg-1.jpg") no-repeat center top;
 
- 
-
-}
-
-    .page-header {
-        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), url(/assets/images/bg/bg-1.jpg) center center no-repeat;
-        background-size: cover;
-    }
-    *, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.side-form{
-  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
-  font-size: 12px;
-}
-
- .side-form button, input {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-}
-
-.background {
-  display: flex;
-  min-height: 100vh;
-}
-
-.side-form .container {
-  flex: 0 1 700px;
-  margin: auto;
-  padding: 10px;
-}
-
-.screen {
-  position: relative;
-        display: inline-block;
- /* background: #3e3e3e;*/
-        border-left: 5px solid #d1b000;
- 
-}
-/*
-.screen:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, .4);
-  z-index: -1;
-}*/
-
-.screen-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background: #4d4d4f;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.screen-header-left {
-  margin-right: auto;
-}
-
-.screen-header-button {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 3px;
-  border-radius: 8px;
-  background: white;
-}
-
-.screen-body {
-  display: flex;
-}
-
-.screen-body-item {
-  flex: 1;
-  padding: 50px;
-}
-
-.screen-body-item.left {
-  display: flex;
-  flex-direction: column;
-}
-
-.app-title {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #ea1d6f;
-  font-size: 26px;
-}
-
-.app-title:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 25px;
-  height: 4px;
-  background: #ea1d6f;
-}
-
-.app-contact {
-  margin-top: auto;
-  font-size: 8px;
-  color: #888;
-}
-
-      
-.app-form-group {
-  margin-bottom: 15px;
-}
-
-.app-form-group.message {
-  margin-top: 40px;
-}
-
-.app-form-group.buttons {
-  margin-bottom: 0;
-  text-align: right;
-}
-
-.app-form-control {
-  width: 100%;
-  padding: 10px 0;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #666;
-  color: #ddd;
-  font-size: 14px;
-  text-transform: uppercase;
-  outline: none;
-  transition: border-color .2s;
-}
-
-.app-form-control::placeholder {
-  color: #666;
-}
-
-.app-form-control:focus {
-  border-bottom-color: #ddd;
-}
-
-.app-form-button {
-  background: none;
-  border: none;
-  color: #ea1d6f;
-  font-size: 14px;
-  cursor: pointer;
-  outline: none;
-}
-
-.app-form-button:hover {
-  color: #b9134f;
-}
-
-.dribbble {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-
-
-
-
-
-
-</style>
 
 <section class="banner-section-service"></section>
-<div class="container-fluid page-header  py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+<div class="container-fluid page-header-1  py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
     <div class="container py-5">
         <h1 class="display-5">Accounting Services</h1>
    
@@ -249,30 +63,8 @@
             <div class="col-12  " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
              <img class="img-fluid" src="/assets/images/services/g-1.jpg">
              <div class="align-items-center">
+                         @await Html.PartialAsync("_AsideContact")     
                             
-                            <div class="screen col-lg-12 mt-4">
-                                <div class="screen-body-item">
-                                    
-                                    <h4 class="text-underline pb-3 mb-3">TALK TO AN EXPERT</h4>
-                                    <form class="app-form col-lg-10"method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
-                                        <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="NAME">
-                                        </div>
-                                        <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="EMAIL">
-                                        </div>
-                                        <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="CONTACT NO">
-                                        </div>
-                                        <div class="app-form-group message">
-                                            <input class="app-form-control" placeholder="MESSAGE">
-                                        </div>
-                                        <div class="app-form-group buttons">
-                                            <button type="submit" id="submit-contact" class="btn btn-outline-primary text-dark">Send Message</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
              </div>
            
                         
@@ -301,50 +93,45 @@
                         </p>
                         </div>
                      </div>
-                <div class="row g-1">
-                    <div class="col-lg-3">
-                        <div class="position-relative w-100 h-100">
-                            <div class="figure-block position-relative d-grid gap-10 text-white ">
-                                <span>
-                                    <i class="fa-solid fa-calendar-check display-4"></i>
-                                </span>
-                                <h5 class="small text-uppercase">Timely delivery</h5>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex gap-4 mb-30">
+                            <div class="expertise-icon">
+                                <i class="fa-solid fa-calendar-check text-white fs-2 lh-lg text-center d-block pt-lg-0 pt-2"></i>
                             </div>
-
+                            <div>
+                                <h3 class="fs-5 fw-normal mt-20">Timely delivery</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="position-relative w-100 h-100">
-                            <div class="figure-block position-relative d-grid gap-10 text-white bg-primary">
-                                <span>
-                                    <i class="fa-regular fa-handshake display-4"></i>
-                                </span>
-                                <h5 class="small text-uppercase">Custumzed service</h5>
+                        <div class="d-flex gap-4 mb-30">
+                            <div class="expertise-icon">
+                                <i class="fa-regular fa-handshake text-white fs-2 lh-lg text-center d-block pt-lg-0 pt-2"></i>
+                            </div>
+                            <div>
+                                <h3 class="fs-5 fw-normal mt-20">custumzed service</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="position-relative w-100 h-100">
-                            <div class="figure-block position-relative d-grid gap-10 text-white">
-                                <span>
-                                    <i class="fa-solid fa-wand-magic-sparkles display-4"></i>
-                                </span>
-                                <h5 class="small text-uppercase">Reliable expertise</h5>
+                    <div class="col-lg-6">
+                        <div class="d-flex gap-4 mb-30">
+                            <div class="expertise-icon">
+                                <i class="fa-solid fa-wand-magic-sparkles text-white fs-2 lh-lg text-center d-block pt-lg-0 pt-2"></i>
+                            </div>
+                            <div>
+                                <h3 class="fs-5 fw-normal mt-20">Reliable expertise</h3>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class=" position-relative w-100 h-100">
-                            <div class="figure-block position-relative d-grid gap-10 text-white bg-primary">
-                                <span>
-                                    <i class="fa-solid fa-trophy display-4"></i>
-                                </span>
-                                <h5 class="small text-uppercase">Proven results</h5>
+                        <div class="d-flex gap-4 mb-30">
+                            <div class="expertise-icon">
+                                <i class="fa-solid fa-trophy text-white fs-2 lh-lg text-center d-block pt-lg-0 pt-2"></i>
                             </div>
-
+                            <div>
+                                <h3 class="fs-5 fw-normal mt-20">proven results</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
+
  
                 </div>
             <div class="col-lg-4">

@@ -14435,3 +14435,112 @@ table.dataTable > thead .sorting_desc:after {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Custom Css */
+/* Side Form */
+.page-header-1 {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../images/bg/bg-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* Side Form */
+
+.side-form button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.background {
+    display: flex;
+    min-height: 100vh;
+}
+
+.side-form .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+.screen {
+    position: relative;
+    display: inline-block;
+    border-left: 5px solid #d1b000;
+}
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+    margin-right: auto;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+    .screen-body-item.left {
+        display: flex;
+        flex-direction: column;
+    }
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+    .app-form-group.message {
+        margin-top: 40px;
+    }
+
+    .app-form-group.buttons {
+        margin-bottom: 0;
+        text-align: right;
+    }
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+    .app-form-control::placeholder {
+        color: #666;
+    }
+
+    .app-form-control:focus {
+        border-bottom-color: #ddd;
+    }
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
