@@ -16,44 +16,37 @@
                     <h6 class="mb-4 fw-semibold text-white">USEFUL LINKS</h6>
                     <ul class="list-unstyled d-grid gap-1">
                         <li>
-                            <a href="about-us.html"
+                            <a asp-action="About" asp-controller="Home"
                                class="text-decoration-none d-flex gap-2 text-white text-opacity-75">
                                 <i class="fa-solid fa-arrow-right-long text-primary"></i>
                                 <span>About us</span>
                             </a>
                         </li>
                         <li>
-                            <a href="casestudies.html"
-                               class="text-decoration-none d-flex gap-2 text-white text-opacity-75">
-                                <i class="fa-solid fa-arrow-right-long text-primary"></i>
-                                <span>Casestudies</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="services.html"
+                            <a asp-action="Index" asp-controller="Services"
                                class="text-decoration-none d-flex gap-2 text-white text-opacity-75">
                                 <i class="fa-solid fa-arrow-right-long text-primary"></i>
                                 <span>Services</span>
                             </a>
                         </li>
                         <li>
-                            <a href="how-we-work.html"
+                            <a asp-action="About" asp-controller="Home"
                                class="text-decoration-none d-flex gap-2 text-white text-opacity-75">
                                 <i class="fa-solid fa-arrow-right-long text-primary"></i>
                                 <span>How we work</span>
                             </a>
                         </li>
                         <li>
-                            <a href="our-history.html"
+                            <a href="https://blog.expertsconsult.co/"
                                class="text-decoration-none d-flex gap-2 text-white text-opacity-75">
                                 <i class="fa-solid fa-arrow-right-long text-primary"></i>
-                                <span>Our history</span>
+                                <span>Blog</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-decoration-none d-flex gap-2 text-white text-opacity-75">
+                            <a asp-action="Contact" asp-controller="Home" class="text-decoration-none d-flex gap-2 text-white text-opacity-75">
                                 <i class="fa-solid fa-arrow-right-long text-primary"></i>
-                                <span>Drop us a line</span>
+                                <span>Contact</span>
                             </a>
                         </li>
                     </ul>
@@ -94,7 +87,7 @@
             </div>
             <div class="col-lg-3 col-12">
                 <h6 class="mb-4 fw-semibold text-white">NEWSLETTER</h6>
-                <p>Signup for our latest case studies.</p>
+                <p>Signup for our latest news.</p>
 
                 <form action="#" method="post">
                     <div class="input-group">
@@ -111,7 +104,7 @@
 
                 <ul class="list-unstyled d-flex gap-4 pt-4">
                     <li>
-                        <a href="#" target="_blank" class="text-white text-opacity-75">
+                        <a target="_blank" href="https://www.facebook.com/ExpertsConsultCo/" class="text-white text-opacity-75">
                             <i class="fa-brands fs-5 fa-facebook-f"></i>
                         </a>
                     </li>
@@ -121,13 +114,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" class="text-white text-opacity-75">
-                            <i class="fa-brands fs-5 fa-vimeo-v"></i>
+                        <a target="_blank" href="https://g.page/r/Cb3oqOcH2YKFEAI/review"  class="text-white text-opacity-75">
+                            <i class="fa-brands fs-5 fa-google"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" class="text-white text-opacity-75">
-                            <i class="fa-brands fs-5 fa-youtube"></i>
+                        <a target="_blank" href="https://www.linkedin.com/in/experts-consult-10430b249/" class="text-white text-opacity-75">
+                            <i class="fa-brands fs-5 fa-linkedin"></i>
                         </a>
                     </li>
                 </ul>
@@ -140,7 +133,7 @@
                 <p class="mb-lg-0">&copy; @DateTime.Now.Year EXPERTS. All Rights Reserved</p>
                 <ul class="list-unstyled d-flex gap-3 mb-0">
                     <li>
-                        <a href="about-us.html"
+                        <a asp-action="Contact" asp-controller="Home"
                            class="text-decoration-none text-white text-opacity-75">
                             <span>
                                 Contact
@@ -157,7 +150,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-decoration-none text-white text-opacity-75">
+                        <a asp-action="Privacy" asp-controller="Home" class="text-decoration-none text-white text-opacity-75">
                             <span>
                                 Privacy
                                 policy
@@ -171,3 +164,4 @@
 
 
 </footer>
+<a id="scrollUp" onclick="topFunction()" title="Go to top"><i class="fa-solid fa-angle-up"></i></a>

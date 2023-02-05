@@ -61,7 +61,7 @@
             <div class="col-lg-6">
             <div class="row gx-3 h-100">
             <div class="col-12  " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-             <img class="img-fluid" src="/assets/images/services/g-1.jpg">
+             <img class="img-fluid" src="/assets/images/services/g-1.jpg" alt=" accounting services">
              <div class="align-items-center">
                          @await Html.PartialAsync("_AsideContact")     
                             
@@ -221,16 +221,3 @@
         </div>
     </div>
 </section>
-@section Scripts{
-    <script src="/assets/js/waypoints.min.js"></script>
-    <script src="/assets/js/counterup.min.js"></script>
-    <script>
-
-        $('[data-toggle="counter-up"]').counterUp({
-            delay: 10,
-            time: 1000
-        });
-        $('.counter').addClass('animated fadeInDownBig');
-        $('h3').addClass('animated fadeIn');
-    </script>
-}

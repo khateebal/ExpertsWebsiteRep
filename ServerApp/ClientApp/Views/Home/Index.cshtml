@@ -12,7 +12,7 @@
                     <div class="text-center">
                         <div class="welcom-text">
 
-                            <h1 class="h1">
+                            <h1 class="h1 display-5">
                                 We Are Experts in
                                 <br class="d-md-none">
                                 <span class="typed "></span>
@@ -38,7 +38,7 @@
                         <h5 class="small text-uppercase">Tax Consultancy</h5>
                     </div>
                     <div class="figcaption mw-100 w-100 pe-0 position-absolute">
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Know more</a>
+                        <a asp-action="hire-a-tax-consultant-in-dubai-uae" asp-controller="services" class="btn btn-sm btn-outline-secondary">Know more</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                         <h5 class="small text-uppercase">Accounting Service</h5>
                     </div>
                     <div class="figcaption mw-100 w-100 pe-0 position-absolute">
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Know more</a>
+                        <a asp-action="accounting-services" asp-controller="services" class="btn btn-sm btn-outline-secondary">Know more</a>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                         <h5 class="small text-uppercase">Audit & Assurance</h5>
                     </div>
                     <div class="figcaption mw-100 w-100 pe-0 position-absolute">
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Know more</a>
+                        <a asp-action="audit-and-assurance" asp-controller="services" class="btn btn-sm btn-outline-secondary">Know more</a>
                     </div>
                 </div>
             </div>
@@ -74,10 +74,10 @@
                         <span>
                             <i class="fa-solid fa-chart-line fa-3x"></i>
                         </span>
-                        <h5 class="small text-uppercase">Business Growth</h5>
+                        <h5 class="small text-uppercase">Business Solutions</h5>
                     </div>
                     <div class="figcaption mw-100 w-100 pe-0 position-absolute">
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Know more</a>
+                        <a asp-action="business-solutions-in-uae" asp-controller="services" class="btn btn-sm btn-outline-secondary">Know more</a>
                     </div>
                 </div>
             </div>
@@ -126,116 +126,73 @@
         </div>
     </div>
 </section>
-<!-- hero section end -->
-<section class="bg-secondary">
+<div class="container-xxl py-5">
     <div class="container">
-        <div class="text-white text-center py-60">
-            <p class="small text-uppercase fw-bold lh-lg letter-spacing-lg">
-                We have audited 2400 financial statments  
-                <span class="d-block"> in Dubai, RAK and Shrjah</span>
-            </p>
-            <h2 class="display-5 fw-bold pb-4 custom-letter-spacing-n">
-                Download Our 2023  <span class="text-primary">Highlights</span>
-            </h2>
-            <a href="#" class="btn btn-lg btn-primary py-3">
-                <span class="fa-solid fa-downlod"></span>
-                Download PDF<i class="icon-arrows-slim-right ps-2"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="py-60">
-    <div class="container">
-        <div class="row gy-30">
-
-            <div class="col-lg-10">
-                <div class="">
-                    <h2 class="text-underline-sm pb-3 mb-3">
-                        Our  <span class="text-primary pe-2">EXPERTS</span>
-                    </h2>
-                    <p class="text-muted pb-3">
-                        Our team have more than 20 years of experience.
-                    </p>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <div class="position-relative me-lg-4">
+                    <img class="img-fluid w-100" src="/assets/images/bg/cta-1.jpg" alt="why choose us">
+            @*        <span class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block" style="width: 120px; height: 120px;"></span>
+                    <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <span></span>
+                    </button>*@
                 </div>
-                <div id="mySwiper-mg" class="swiper pb-lg-0 pb-5 mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden swiper-navigation-disabled">
-                    <div class="swiper-wrapper parent-container" id="swiper-wrapper-151c11395903893b" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
-                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 275.333px; margin-right: 60px;">
-
-                            <div class="card single-team-member h-100">
-                                <div class="team-member-photo">
-                                    <img src="/assets/images/team/team-1.jpg" class="card-img-top" alt="service image">
-                                    <a href="member-details.html" class="view-full-size text-decoration-none small text-uppercase lh-sm">
-                                        <span class="text-white">know more</span>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a class="text-decoration-none">
-                                        <h5 class="card-title fs-4 fw-normal">Othman Suleiman</h5>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <span class="small fw-bold text-uppercase text-primary d-block mt-10 mb-3">
-                                            General Manager
-                                        </span>
-                                    </a>
-                                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Why Choosing Experts!</p>
+                <h1 class="display-5 mb-4">Few Reasons Why People Choosing <span class="text-primary">Experts</span></h1>
+                <p class="mb-4">
+                    We are a one-stop solution for all accounting, tax and VAT needs, and strive to become a trusted partner in our client's financial endeavors.
+                </p>
+                <div class="row gy-4">
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div >
+                                <i class="fa-solid fa-circle-check fs-5 text-primary"></i>
                             </div>
-
-
-                        </div>
-                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="width: 275.333px; margin-right: 60px;">
-
-                            <div class="card single-team-member h-100">
-                                <div class="team-member-photo">
-                                    <img src="/assets/images/team/team-2.jpg" class="card-img-top" alt="service image">
-                                    <a href="member-details.html" class="view-full-size text-decoration-none small text-uppercase lh-sm">
-                                        <span class="text-white">know more</span>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a  class="text-decoration-none">
-                                        <h5 class="card-title fs-4 fw-normal">Khayri Mansour</h5>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <span class="small fw-bold text-uppercase text-primary d-block mt-10 mb-3">
-                                            Administrative Manager
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 275.333px; margin-right: 60px;">
-
-
-                            <div class="card single-team-member h-100">
-                                <div class="team-member-photo">
-                                    <img src="/assets/images/team/team-3.jpg" class="card-img-top" alt="service image">
-                                    <a href="member-details.html" class="view-full-size text-decoration-none small text-uppercase lh-sm">
-                                        <span class="text-white">know more</span>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a  class="text-decoration-none">
-                                        <h5 class="card-title fs-4 fw-normal">Haitham Mansour</h5>
-                                    </a>
-                                    <a href="#" class="text-decoration-none">
-                                        <span class="small fw-bold text-uppercase text-primary d-block mt-10 mb-3">
-                                            Financial Manager
-                                        </span>
-                                    </a>
-                                </div>
+                            <div class="ms-4">
+                                <h4>Experienced team of professionals:</h4>
+                                <span>
+                                    Our team of experienced professionals stays up-to-date on the latest industry developments to provide accurate and comprehensive guidance
+                                    to our clients
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div id="swiper-pagination-id" class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal pb-4 swiper-pagination-lock"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span></div>
-
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div>
+                                <i class="fa-solid fa-circle-check fs-5 text-primary"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h4>Personalized Approach</h4>
+                                <span>
+                                    We take a personalized approach, working closely with each client to understand their unique financial needs and goals.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <div >
+                                <i class="fa-solid fa-circle-check fs-5 text-primary fa-3x"></i>
+                            </div>
+                            <div class="ms-4">
+                                <h4>Competitive pricing</h4>
+                                <span>
+                                    We offer competitive pricing for our services
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+
+
+
 @section Scripts{
     <script>
         var typed = new Typed('.typed', {

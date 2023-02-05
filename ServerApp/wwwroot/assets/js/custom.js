@@ -41,18 +41,18 @@ jQuery(document).ready(function ($) {
 // back to top
 
 //Get the button
-//var mybutton = document.getElementById("scrollUp");
+var mybutton = document.getElementById("scrollUp");
 
-//// When the user scrolls down 20px from the top of the document, show the button
-//window.onscroll = function () { scrollFunction() };
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
 
-//function scrollFunction() {
-//    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//        mybutton.style.display = "block";
-//    } else {
-//        mybutton.style.display = "none";
-//    }
-//}
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
@@ -88,129 +88,6 @@ const scrollSpy = new bootstrap.ScrollSpy(document.body, {
 })
 
 
-
-// Line chart
-
-var xValues = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG'];
-var chartSelector = document.querySelectorAll('#myChart');
-if (chartSelector.length) {
-    new Chart("myChart", {
-        type: "line",
-        data: {
-            labels: xValues,
-            datasets: [{
-                label: 'Amount Invested',
-                data: [10, 15, 20, 25, 27, 25, 23, 25],
-                borderColor: "#0077b6",
-                fill: false
-            },
-            {
-                label: 'Worth of Investement',
-                data: [25, 18, 16, 17, 20, 25, 30, 35],
-                borderColor: "#dc3545",
-                fill: false
-            }]
-        },
-        options: {
-            legend: { display: true }
-        }
-    });
-}
-
-
-// DoughnutChart
-var DoughnutChartSelector = document.querySelectorAll('#myDoughnutChart');
-if (DoughnutChartSelector.length) {
-
-    var xValues = ["Investment", "Employer", "Member"];
-    var yValues = [60, 40, 30];
-    var barColors = [
-        "#0077b6",
-        "#dc3545",
-        "cyan"
-    ];
-
-    new Chart("myDoughnutChart", {
-        type: "doughnut",
-        data: {
-            labels: xValues,
-            datasets: [{
-                backgroundColor: barColors,
-                data: yValues
-            }]
-        },
-        options: {
-            title: {
-                display: true,
-            }
-        }
-    });
-}
-
-//PieChart
-var PieChartSelector = document.querySelectorAll('#myPieChart');
-if (PieChartSelector.length) {
-    var xValues = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG"];
-    var yValueBlue = [10, 15, 20, 25, 27, 25, 23, 25, 0];
-    var yValueRed = [25, 18, 16, 17, 20, 25, 30, 35, 0];
-    var barColorBlue = ["#0077b6", "#0077b6", "#0077b6", "#0077b6", "#0077b6", "#0077b6", "#0077b6", "#0077b6"];
-    // var barColorRed = ["#dc3545", "#dc3545", "#dc3545", "#dc3545", "#dc3545", "#dc3545", "#dc3545", "#dc3545"];
-    var barColorRed = jQuery('#myPieChart').attr('data-barColor2').split(",");
-
-
-    new Chart("myPieChart", {
-        type: "bar",
-        data: {
-            labels: xValues,
-            datasets: [{
-                label: 'Amount Invested',
-                backgroundColor: barColorBlue,
-                data: yValueBlue
-            },
-            {
-                label: 'Worth of Investement',
-                backgroundColor: barColorRed,
-                data: yValueRed
-            }]
-        },
-        options: {
-            legend: { display: true },
-            title: {
-                display: false,
-                text: "World Wine Production 2018"
-            }
-        }
-    });
-}
-
-// DoughnutChart2
-var myDoughnutChart2 = document.querySelectorAll('#myDoughnutChart2');
-if (myDoughnutChart2.length) {
-    var xValues = ["Investment", "Employer", "Member"];
-    var yValues = [50, 40, 50];
-    var barColors = [
-        "#6a994e",
-        "#4cc9f0",
-        "#8e9aaf"
-    ];
-
-    new Chart("myDoughnutChart2", {
-        type: "doughnut",
-        data: {
-            labels: xValues,
-            datasets: [{
-                backgroundColor: barColors,
-                data: yValues
-            }]
-        },
-        options: {
-            title: {
-                display: true,
-            }
-        }
-    });
-
-}
 
 // SwiperSlide 
 

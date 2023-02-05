@@ -13931,10 +13931,12 @@ hr {
 .header-content {
   padding-bottom: 86px;
 }
-
+.welcom-text{
+    height:120px;
+}
 .hero-spacing {
-  min-height: 630px;
-  padding-top: 14.4rem;
+    min-height: 630px;
+    padding-top: 14.4rem;
 }
 
 .help {
@@ -14442,6 +14444,10 @@ table.dataTable > thead .sorting_desc:after {
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../images/bg/bg-1.jpg) center center no-repeat;
     background-size: cover;
 }
+.page-header-2 {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../images/bg/bg-2.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 
 /* Side Form */
@@ -14524,7 +14530,7 @@ table.dataTable > thead .sorting_desc:after {
     background: none;
     border: none;
     border-bottom: 1px solid #666;
-    color: #ddd;
+    color: var(--bs-secondary);
     font-size: 14px;
     text-transform: uppercase;
     outline: none;

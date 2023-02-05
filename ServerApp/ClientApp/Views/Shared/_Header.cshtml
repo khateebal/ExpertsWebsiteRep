@@ -1,5 +1,4 @@
 ﻿<header id="navbar_top" class="transparent-header bg-secondary position-fixed ">
-    @*position-fixed*@
     <div class="top-bar  py-2 py-lg-0">
         <div class="container">
             <div class="d-flex gap-4 flex-wrap justify-content-lg-end align-items-center">
@@ -16,14 +15,14 @@
                     <span class="text-white ps-2">+971 585-397-170</span>
                 </div>
                 <div class="d-sm-flex d-none">
-                    <span><a href="contact.html" class="btn btn-sm btn-primary">get a free quote</a></span>
+                    <span><a asp-action="Contact"asp-controller="Home" class="btn btn-sm btn-primary">get a free quote</a></span>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0 border-bottom ">
-            <a class="site-logo navbar-brand" href="index.html" rel="home">
+            <a class="site-logo navbar-brand" asp-action="Index" asp-controller="Home" rel="home">
                 <img class="logo-dark" src="/assets/images/logo/logo.png" width="250" height="40"
                      alt="Experts logos">
                 <img class="logo-light" src="/assets/images/logo/logo.png" width="250" height="40"
@@ -73,18 +72,12 @@
                                         <li><a class="dropdown-item" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">VAT Registration</a></li>
                                         <li><a class="dropdown-item" asp-action="vat-compliance-in-the-uae" asp-controller="services">VAT Compliance</a></li>
                                         <li><a class="dropdown-item" asp-action="vat-refund-in-the-uae" asp-controller="services">VAT Refund</a></li>
-                                      @*  <li><hr class="dropdown-divider"></li>*@
                                     </ul>
                                 </li>
                              
                                <li>
                                     <a class="dropdown-item" asp-action="business-solutions-in-uae" asp-controller="services">
                                         Business Solutions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" asp-action="business-growth-services-in-dubai-uae" asp-controller="services">
-                                        Business Growth
                                     </a>
                                 </li>
                                
@@ -113,7 +106,7 @@
                             </a>
                         </div>
                         <div class="social-logo-dark">
-                            <span><a asp-action="Index" asp-controller="Home" class="btn btn-sm btn-primary">get a free quote</a></span>
+                            <span><a asp-action="Contact" asp-controller="Home" class="btn btn-sm btn-primary">get a free quote</a></span>
                         </div>
                     </div>
                 </div>

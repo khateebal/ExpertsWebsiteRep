@@ -7,33 +7,75 @@
 	<meta name="keywords" content="Audit, Internal Audit, External Audit, Audit Firm, Dubai, UAE" />
 }
 <section class="banner-section-service"></section>
-<section class="container px-4 py-3">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
-        <div class="col-lg-7 text-center text-lg-start ">
-            <h1 class="display-5 fw-bold lh-1 mb-3 ">Audit & Assurance Services</h1>
-            <nav aria-label="breadcrumb" class="breadcrumb-text">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a> /</li>
-                    <li class="breadcrumb-item active" aria-current="page">Audit & Assurance Services</li>
-                </ol>
-            </nav>
-            <hr class="my-4">
-            <h2>Experience Top-Level Auditing with the Premier internal audit Firm in Dubai</h2>
-            <p class="col-lg-10 fs-4">Experts Accounting and Tax Consultancy is dedicated to providing 
-                top-notch internal auditing services that will take your business to new heights. 
-               </p>
-            <p class="col-lg-10 fs-4">
-                With our focus on improving processes and delivering outstanding results,
-                we are confident in our ability to help you stay ahead in a competitive market.  </p>
-            <p>Let us help you replace outdated systems with innovative procedures, so you can consistently deliver exceptional output. 
-                Partner with us today to unlock the full potential of your business."</p>
-        </div>
-        <div class="col-md-10 mx-auto col-lg-5 pb-3  ">
-            <img src="/assets/images/services/ser-3.jpg" alt="Audit Firm in Dubai" class="img-fluid rounded-3 mb-3  ">
-            @await Html.PartialAsync("_AsideContact")
-        </div>
+<div class="container-fluid page-header-2  py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+    <div class="container py-5">
+        <h1 class="display-5">Audit Services</h1>
+
+        <nav aria-label="breadcrumb" class="breadcrumb-text">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a> /</li>
+                <li class="breadcrumb-item active" aria-current="page">Audit Services</li>
+            </ol>
+        </nav>
     </div>
-</section>
+</div>
+
+
+<div class="container-xxl py-3">
+<div class="container">
+    <div class="row g-5">
+        <div class="col-lg-6" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Experience Top-Level Auditing with </p>
+                <h2 class="display-5 mb-4">the Premier internal audit Firm in Dubai</h2>
+            <p class="mb-4">
+                As a business owner or finance professional, you understand the importance of accurate financial reporting. 
+                But with the ever-changing regulations and the complexity of financial transactions, it can be difficult to ensure that your 
+                financial statements are up-to-date and in compliance with local laws and international standards. That's where our audit services come in.
+            </p>
+            <p class="mb-4">
+
+                At Experts Accounting & Tax Consultancy we provide comprehensive audit services to businesses in the UAE, whether local or foreign-owned. Our team of experienced
+                auditors uses the latest technology and industry-specific knowledge to conduct a thorough review of your financial statements,
+                ensuring that they are accurate, reliable, and in compliance with regulations. 
+            </p>
+            <p class="mb-4">
+                Our audit services include, but are not limited to:
+            </p>
+            <div class="d-flex align-items-center mb-4">
+                <div class="flex-shrink-0 bg-primary p-4">
+                    <div class="welcom-text">
+                        <h1 class="display-1" data-toggle="counter-up">20</h1>
+                    </div>
+                    <h5 class="text-white">YEARS OF</h5>
+                    <h5 class="text-white">EXPERIENCE</h5>
+                </div>
+                <div class="ms-4">
+                        <p><i class="fa fa-check text-primary me-2"></i>Financial statement audi</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Internal control review</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Assessment of compliance with relevant laws and regulations</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>International auditing standards recognition (for foreign companies)</p>
+                        <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Use of latest technology and industry knowledge</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row gx-3 h-100">
+                <div class="col-12  " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <img class="img-fluid" src="/assets/images/services/ser-3.jpg" alt="Audit Service">
+                    <div class="align-items-center">
+                        @await Html.PartialAsync("_AsideContact")
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
 <section class="service-section">
     <div class="container pt-2 pb-2 ">
         <div class="service-offer bg-light py-30 pe-40 mb-5">
