@@ -11,6 +11,17 @@
     <Content Remove="ClientApp\Views\Services\audit-and-assurance.ar.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="ClientApp\src\js\custom.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\src\js\custom.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="AspNetCore.SEOHelper" Version="1.0.1" />
 		<PackageReference Include="libphonenumber-csharp" Version="8.9.10" />

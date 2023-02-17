@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"] - EXPERTS Accounting & Tax Consultancy | Accounting Servies | Accounting Firms in Dubai</title>
+    <title>@ViewData["Title"] - EXPERTS Accounting & Tax Consultancy</title>
     <meta name="description" content="Experts Accounting Services & Tax Consultancy Certified professional chartered Accountants provides Accounting and Bookkeeping services in Dubai &amp;Top-ranked accounting firm in Dubai, UAE" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Experts Accounting Services & Tax Consultancy in Dubai | Bookkeeping Services | Accounting Firms in Dubai" />
+    
+    <meta property="og:image" content="favicon/logo-192">
+    <meta property="og:title" content="Experts Accounting Services & Tax Consultancy">
     <meta property="og:description" content="Experts Accounting & Tax Consultancy Certified professional chartered Accountants provides Bookkeeping and Accounting services in Dubai &amp;Top-ranked accounting firm in Dubai, UAE" />
     <meta property="og:url" content="https://www.expertsconsult.co/" />
     <meta property="og:site_name" content="Experts Accounting Services  & Tax Consultancy in Dubai | Bookkeeping Services  | Accounting Firms in Dubai, UAE" />
@@ -18,21 +20,46 @@
     <meta property="article:modified_time" content="2023-01-24T07:49:21+00:00" />
     <meta property="og:image" content="https://www.expertsconsult.co/images/logo/og-image.jpg" />
     @await RenderSectionAsync("metatags", required: false)
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css" asp-append-version="true">
-    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  
+   @* <link rel="stylesheet" href='/assets/css/bundle.min.css?version=6'>*@
+    <script src="~/dist/site.entry.js" defer></script>
+
+    <script src="~/dist/validation.entry.js" defer></script>
+    <link rel="stylesheet" href="~/dist/site.css">
+
 </head>
 <body>
+@*    <div id="spinner"
+         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>*@
     @await Html.PartialAsync("_Header")
     @RenderBody()
     @await Html.PartialAsync("_Footer")
+   
+@*    <script src="/assets/js/bundle.min.js?version=7"></script>
+    <script src="/assets/js/custom.js"></script>*@
 
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/typed.min.js"></script>
-    <script src="~/assets/js/custom.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
     @await Html.PartialAsync("_TagsBody")
+  
   
 </body>
 </html>

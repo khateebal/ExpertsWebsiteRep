@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "_LandingPage";
+    ViewData["Title"] = "Accounting Services in Dubai | Bookkeeping | Accounting Firms in Dubai";
+}
+
+@section metatags{
+    <meta name="description" content="Professional accounting and bookkeeping services for your business. Experts Accounting & Tax Consultancy in UAE provides accurate and efficient services to improve your financial performance and save you time and money.">
+
+}
+
+<div  class="open">
+	<span class="cls"></span>
+	<span>
+		<ul class="sub-menu" style="direction:rtl">
+			<li>
+				<a href="#about" title="about">Sobre </a>
+			</li>
+			<li>
+				<a href="#skills" title="skills">Habilidades </a>
+			</li>
+			<li>
+				<a href="#jobs" title="jobs">Trabalhos</a>
+			</li>
+			<li>
+				<a href="#contact" title="contact">Contatot</a>
+			</li>
+		</ul>
+	</span>
+	<span class="cls"></span>
+</div>
+
+<div style="position:absolute;pointer-events:none;user-select:none;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><div style="display:contents;border-radius:inherit;pointer-events:none">
+	<img src="https://framerusercontent.com/images/Skv2b2eQaKDAOPJkFTPXbZymDw.jpg" alt="" srcset="https://framerusercontent.com/images/Skv2b2eQaKDAOPJkFTPXbZymDw.jpg?scale-down-to=512 512w, https://framerusercontent.com/images/Skv2b2eQaKDAOPJkFTPXbZymDw.jpg?scale-down-to=1024 1024w, https://framerusercontent.com/images/Skv2b2eQaKDAOPJkFTPXbZymDw.jpg?scale-down-to=2048 2048w, https://framerusercontent.com/images/Skv2b2eQaKDAOPJkFTPXbZymDw.jpg?scale-down-to=4096 4096w, https://framerusercontent.com/images/Skv2b2eQaKDAOPJkFTPXbZymDw.jpg 4490w" sizes="100vw" style="pointer-events:none;user-select:none;display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto"></div>
+</div>
+<div class="framer-ye174t" data-framer-name="Content" name="Content">
+	<div class="framer-1bx8n9a-container">
+		@*<img src="/assets/images/logo/logo.png"
+			 style="position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;border-radius:0" alt="Logo">
+*@	</div>
+	<div id="wizard">
+		<div class="step">
+			<div class="framer-kc7om8" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+				<h1 class="h2">
+					On a scale of 1-10, how confident are you with your current financial situation?
+				</h1>
+			</div>
+			<div class="framer-j38bb3" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+				<p class="p-30">
+					<input id="range-slider__range" type="range" value="1" min="1" max="10">
+					<span id="range-slider__value">0</span>
+				</p>
+				<div class="x-20">
+                    <a id="next" class="btn btn-primary">
+                        find out more  <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="step">Step 2</div>
+		<div class="step">Step 3</div>
+		<div class="step">Step 4</div>
+		<div class="step">Step 5</div>
+	</div>
+
+	<button id="prev">Previous</button>
+    @*<button id="next">Answer</button>*@
+	
+</div>
+
+
+
+
+
+
+@section Scripts{
+	
+    <script>
+		$(document).ready(function () {
+			$(document).delegate('.open', 'click', function (event) {
+				$(this).addClass('oppenned');
+				event.stopPropagation();
+			})
+			$(document).delegate('body', 'click', function (event) {
+				$('.open').removeClass('oppenned');
+			})
+			$(document).delegate('.cls', 'click', function (event) {
+				$('.open').removeClass('oppenned');
+				event.stopPropagation();
+			});
+
+			var slider = document.getElementById("range-slider__range");
+			var output = document.getElementById("range-slider__value");
+
+			output.innerHTML = slider.value;
+
+			// This function input current value in span and add progress colour in range
+			slider.oninput = function () {
+
+				output.innerHTML = this.value;
+
+				var value = (this.value - this.min) / (this.max - this.min) * 100;
+
+				this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + value + '%, #d7dcdf ' + value + '%, #d7dcdf 100%)'
+			}
+		});
+    </script>
+	<script>
+		const wizard = document.querySelector("#wizard");
+		const steps = wizard.querySelectorAll(".step");
+		const prevBtn = document.querySelector("#prev");
+		const nextBtn = document.querySelector("#next");
+		let currentStep = 0;
+		steps.forEach(step => {
+			step.style.display = "none";
+		});
+		steps[currentStep].style.display = "block";
+
+		prevBtn.addEventListener("click", () => {
+			steps[currentStep].style.display = "none";
+			currentStep--;
+			if (currentStep < 0) {
+				currentStep = steps.length - 1;
+			}
+			steps[currentStep].style.display = "block";
+		});
+
+		nextBtn.addEventListener("click", () => {
+			steps[currentStep].style.display = "none";
+			currentStep++;
+			if (currentStep === steps.length) {
+				currentStep = 0;
+			}
+			if (currentStep === 0) {
+				nextBtn.textContent = "Answer";
+			} else {
+				nextBtn.textContent = "Next";
+			}
+			steps[currentStep].style.display = "block";
+		});
+
+	</script>
+}
