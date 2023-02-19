@@ -1,0 +1,13 @@
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: Yahoo
+Disallow:
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://expertsconsult.co/sitemap.xml

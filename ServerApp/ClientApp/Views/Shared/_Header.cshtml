@@ -11,7 +11,7 @@
                     <span class="text-white ps-2">+971 585-397-170</span>
                 </div>
                 <div class="d-sm-flex d-none">
-                    <span><a asp-action="Contact"asp-controller="Home" class="btn btn-sm btn-primary">get a free quote</a></span>
+                    <span><a asp-action="Contact"asp-controller="Home" class="btn btn-sm btn-primary text-dark fs-6">get a free quote</a></span>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
                 <img class="logo-light" src="/assets/images/logo/logo.png" width="250" height="40"
                      alt="Experts Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav"
+            <button class="navbar-toggler" type="button" aria-label="Mobile Menu" data-bs-toggle="offcanvas" data-bs-target="#main_nav"
                     aria-controls="main_nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,20 +38,8 @@
                     <ul class="navbar-nav ms-lg-auto">
                         <li class="nav-item"><a class="nav-link active" asp-action="Index" asp-controller="Home">Home</a></li>
                         <li class="nav-item"><a class="nav-link " asp-action="About" asp-controller="Home">About</a></li>
-                @*        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">All Services</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>*@
-
                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown">Services</a>
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown">Services</a>
                             <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                                 <li>
                                     <a class="dropdown-item" asp-action="Index" asp-controller="services">
@@ -75,7 +63,7 @@
                                 </li>
                       
                                  <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#" role="button" aria-expanded="false"> VAT Services</a>
+                                    <a class="dropdown-item dropdown-toggle" href="#" aria-label="VAT Services" role="button" aria-expanded="false"> VAT Services</a>
                                     <ul class="dropdown-menu" >
                                         <li><a class="dropdown-item" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">VAT Registration</a></li>
                                         <li><a class="dropdown-item" asp-action="vat-compliance-in-the-uae" asp-controller="services">VAT Compliance</a></li>
@@ -100,21 +88,21 @@
                     <div class="ps-lg-3 social-logo gap-5 align-items-center">
                         <div class="social-logo-light gap-3">
                            
-                            <a target="_blank"  href="https://api.whatsapp.com/send?phone=+971585397170&text=I'm%20interested%20in%20services%20you%20provide." class="text-decoration-none">
+                            <a target="_blank" aria-label="Whatsapp" href="https://api.whatsapp.com/send?phone=+971585397170&text=I'm%20interested%20in%20services%20you%20provide." class="text-decoration-none">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
-                            <a target="_blank" href="https://g.page/r/Cb3oqOcH2YKFEAI/review" class="text-decoration-none">
+                            <a target="_blank" aria-label="Google" href="https://g.page/r/Cb3oqOcH2YKFEAI/review" class="text-decoration-none">
                                 <i class="fa-brands fa-google"></i>
                             </a>
-                            <a target="_blank" href="https://www.facebook.com/ExpertsConsultCo/" class="text-decoration-none">
+                            <a target="_blank" aria-label="Facebook" href="https://www.facebook.com/ExpertsConsultCo/" class="text-decoration-none">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a target="_blank" href="https://www.linkedin.com/in/experts-consult-10430b249/" class="text-decoration-none">
+                            <a target="_blank" aria-label="linkedin" href="https://www.linkedin.com/in/experts-consult-10430b249/" class="text-decoration-none">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </div>
                         <div class="social-logo-dark">
-                            <span><a asp-action="Contact" asp-controller="Home" class="btn btn-sm btn-primary">get a free quote</a></span>
+                            <span><a asp-action="Contact" asp-controller="Home" class="btn btn-sm btn-primary fs-6">get a free quote</a></span>
                         </div>
                     </div>
                 </div>
