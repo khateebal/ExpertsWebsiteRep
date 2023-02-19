@@ -3,20 +3,27 @@
     <div class="screen-body-item">
 
         <h4 class="text-underline pb-3 mb-3">TALK TO AN EXPERT</h4>
-        <form class="app-form col-lg-10" method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
+        <form  class="app-form col-lg-10" method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
             <div class="app-form-group">
-                <input class="app-form-control" asp-for="Name" aria-required="true" placeholder="NAME">
-                <span class="text-danger" asp-validation-for="Name"></span>
+                <input id="validationCustom01" class="app-form-control" asp-for="Name" aria-required="true" placeholder="NAME" required>
+                <div class="invalid-feedback">
+                    Name is required.
+                </div>
             </div>
             <div class="app-form-group">
-                <input class="app-form-control" asp-for="Email" placeholder="EMAIL">
-                <span class="text-danger" asp-validation-for="Email"></span>
+                <input id="validationCustom02" class="app-form-control" asp-for="Email" placeholder="EMAIL" required>
+                <div class="invalid-feedback">
+                    Email is required.
+                </div>
             </div>
             <div class="app-form-group">
-                <input class="app-form-control" placeholder="CONTACT NO (OPTINAL)">
+                <input id="validationCustom03" class="app-form-control" placeholder="CONTACT NO (OPTINAL)">
             </div>
             <div class="app-form-group message">
-                <input class="app-form-control" asp-for="Message" placeholder="MESSAGE">
+                <input id="validationCustom04" class="app-form-control" asp-for="Message" placeholder="MESSAGE" required>
+                <div class="invalid-feedback">
+                    Message is required.
+                </div>
             </div>
             <div class="app-form-group buttons">
                 <button type="submit" id="submit-contact" class="btn btn-outline-primary text-dark">Send Message</button>

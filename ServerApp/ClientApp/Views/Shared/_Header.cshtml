@@ -29,19 +29,35 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="offcanvas offcanvas-lg offcanvas-end bg-dark p-3 p-lg-0" id="main_nav" tabindex="-1">
+            <div  class="offcanvas offcanvas-lg offcanvas-end bg-dark p-3 p-lg-0" id="main_nav" tabindex="-1">
                 <div class="offcanvas-body align-items-center">
                     <div class="offcanvas-header px-0 justify-content-end">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        <button  type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                     </div>
                     <ul class="navbar-nav ms-lg-auto">
                         <li class="nav-item"><a class="nav-link active" asp-action="Index" asp-controller="Home">Home</a></li>
                         <li class="nav-item"><a class="nav-link " asp-action="About" asp-controller="Home">About</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" asp-action="Index" asp-controller="services">Services</a>
-                            <span class="caret nav-indicator d-lg-none d-block" data-bs-toggle="dropdown"></span>
-                            <ul class="dropdown-menu  fade-down">
+                @*        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">All Services</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>*@
+
+                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown">Services</a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" asp-action="Index" asp-controller="services">
+                                        All Services
+                                    </a>
+                                </li>
                                  <li>
                                     <a class="dropdown-item" asp-action="accounting-services" asp-controller="services">
                                         Accounting Services
@@ -52,24 +68,20 @@
                                         Audit & Assurance
                                     </a>
                                 </li>
-                              @*  <li>
-                                    <a class="dropdown-item dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li>
+                                    <a class="dropdown-item  " asp-action="hire-a-tax-consultant-in-dubai-uae" asp-controller="services">
                                         TAX Consultancy
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" asp-action="hire-a-tax-consultant-in-dubai-uae" asp-controller="services">Tax Agent</a></li>
-                                     </ul>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-item dropdown-toggle "  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        VAT Consultancy
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      
+                                 <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button" aria-expanded="false"> VAT Services</a>
+                                    <ul class="dropdown-menu" >
                                         <li><a class="dropdown-item" asp-action="vat-registeration-in-dubai-uae" asp-controller="services">VAT Registration</a></li>
                                         <li><a class="dropdown-item" asp-action="vat-compliance-in-the-uae" asp-controller="services">VAT Compliance</a></li>
                                         <li><a class="dropdown-item" asp-action="vat-refund-in-the-uae" asp-controller="services">VAT Refund</a></li>
                                     </ul>
-                                </li>*@
+                                </li>
                              
                                <li>
                                     <a class="dropdown-item" asp-action="business-solutions-in-uae" asp-controller="services">

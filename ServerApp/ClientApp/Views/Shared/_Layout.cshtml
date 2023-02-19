@@ -37,27 +37,30 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-  
-   @* <link rel="stylesheet" href='/assets/css/bundle.min.css?version=6'>*@
-    <script src="~/dist/site.entry.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i%7CRaleway:600,700,800&display=swap" rel="stylesheet">
+    
+    <script src="~/dist/site.entry.js"></script>
+    
+    <link rel="stylesheet" href="~/dist/styles.css">
 
-    <script src="~/dist/validation.entry.js" defer></script>
-    <link rel="stylesheet" href="~/dist/site.css">
+
+
+
 
 </head>
 <body>
-@*    <div id="spinner"
+ @*   <div id="spinner"
          class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>*@
+
     @await Html.PartialAsync("_Header")
     @RenderBody()
     @await Html.PartialAsync("_Footer")
-   
-@*    <script src="/assets/js/bundle.min.js?version=7"></script>
-    <script src="/assets/js/custom.js"></script>*@
-
+  
+    <script src="~/dist/script.entry.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+   
     @await Html.PartialAsync("_TagsBody")
   
   

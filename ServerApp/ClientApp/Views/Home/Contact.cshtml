@@ -56,16 +56,16 @@
 				</ul>
 			</div>
 			<div class="col-lg-8">
-				<form class="row gx-4 gy-30" method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
+				<form class="contact-form row gx-4 gy-30" method="post" enctype="multipart/form-data" asp-controller="Inquiry" asp-action="Submit">
 					<div class="col-md-6">
 						<span class="required-field">
-							<input type="text" arequired="" class="form-control input-custom input-full" asp-for="Name" placeholder="Full Name" aria-required="true">
+							<input type="text" arequired="" class="form-control input-custom input-full" asp-for="Name" placeholder="Full Name" aria-required="true" required>
 						</span>
 						<span class="text-danger" asp-validation-for="Name"></span>
 					</div>
 					<div class="col-md-6">
 						<span class="required-field">
-							<input type="text" class="form-control input-custom input-full" asp-for="Email" placeholder="Email">
+							<input type="text" class="form-control input-custom input-full" asp-for="Email" placeholder="Email" required>
 						</span>
 						<span class="text-danger" asp-validation-for="Email"></span>
 					</div>
@@ -74,7 +74,7 @@
 					</div>
 					<div class="col-md-12">
 						<span class="required-field">
-							<textarea class="form-control textarea-custom input-full" id="comment" asp-for="Message" required="" rows="8" placeholder="Message" aria-required="true"></textarea>
+							<textarea class="form-control textarea-custom input-full" id="comment" asp-for="Message"  rows="8" placeholder="Message" aria-required="true" required></textarea>
 						</span>
 						<span class="text-danger" asp-validation-for="Message"></span>
 

@@ -7,12 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="ClientApp\Views\Services\accounting-and-bookkeeping-services.ar.cshtml" />
-    <Content Remove="ClientApp\Views\Services\audit-and-assurance.ar.cshtml" />
+    <Compile Remove="ClientApp\src\js\New folder\**" />
+    <Compile Remove="ClientApp\wwwroot\**" />
+    <Content Remove="ClientApp\src\js\New folder\**" />
+    <Content Remove="ClientApp\wwwroot\**" />
+    <EmbeddedResource Remove="ClientApp\src\js\New folder\**" />
+    <EmbeddedResource Remove="ClientApp\wwwroot\**" />
+    <None Remove="ClientApp\src\js\New folder\**" />
+    <None Remove="ClientApp\wwwroot\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="ClientApp\package - Copy.json" />
+    <Content Remove="ClientApp\package2.json" />
+    <Content Remove="ClientApp\Views\Services\accounting-and-bookkeeping-services.ar.cshtml" />
+    <Content Remove="ClientApp\Views\Services\audit-and-assurance.ar.cshtml" />
+    <Content Remove="wwwroot\dist\site.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\src\js\custom-js.js" />
     <None Remove="ClientApp\src\js\custom.js" />
+    <None Remove="ClientApp\webpack.config - Copy.js" />
+    <None Remove="ClientApp\webpack.config2.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,7 +54,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ClientApp\src\images\" />
+	  <Folder Include="wwwroot\dist\" />
 	</ItemGroup>
 
 </Project>
